@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Christmas Website</title>
+    <link rel="shortcut icon" type="image/png" href="./asset/img/logo.png"/>
+    <link rel="stylesheet" href="./asset/css/bootstrap-grid.css" />
+    <link rel="stylesheet" href="./asset/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+
+  <body>
+
+    <div class="snowflakes" aria-hidden="true">
+      <div class="snowflake">
+      ❅
+      </div>
+      <div class="snowflake">
+      ❅
+      </div>
+      <div class="snowflake">
+      ❆
+      </div>
+      <div class="snowflake">
+      ❄
+      </div>
+      <div class="snowflake">
+      ❅
+      </div>
+      <div class="snowflake">
+      ❆
+      </div>
+      <div class="snowflake">
+      ❄
+      </div>
+      <div class="snowflake">
+      ❅
+      </div>
+      <div class="snowflake">
+      ❆
+      </div>
+      <div class="snowflake">
+      ❄
+      </div>
+    </div>
+
+    <!--==================== HEADER ====================-->
+    <header>
+      <nav>
+        <a href="index.html" class="nav__logo">
+          Xmas Website
+      </a>
+      
+      <i class="fa fa-bars" id="btn_bars"></i>
+
+        <div class="right">
+          <a class="active-link active" href="#about" class="active"> Trang chủ </a>
+          <a class="active-link" href="#two">Sản phẩm </a>
+          <a class="active-link" href="#three">Bài viết </a>
+          <a class="active-link" href="#four"> Dịch vụ </a>
+
+        </div>
+
+        <div class="right2" style="display: flex;">
+          <span class="cart" id="search"><i class="fa fa-search"></i></span>
+          <a href="cart.html" class="cart"><i class="fa fa-cart-arrow-down"></i></a>
+          
+        </div>
+
+      </nav>
+    </header>
+
+    <div class="search">
+      <input type="text" placeholder="Nhập để tìm kiếm">
+      <i class="fa fa-search"></i>
+    </div>
+
+    <section style="background-color: var(--colorWhite); padding-bottom: 0!important;">
+<!-- Hiển thị chi tiết sản phẩm -->
+<br><br>
+<div class="body">
+  <a class="goBack" href="index.html"><i class="fa fa-arrow-circle-left"></i> Trở lại mua hàng</a>
+    <div class="product__details">
+            <div class="product__details-img">
+              <div class="big-img">
+                <img src="./asset/img/snowman.jpg" alt="" id="zoom">
+              </div>
+
+                <div class="small-img">
+                  <img src="./asset/img/snowman.jpg" alt="">
+                  <img src="./asset/img/snowman2.jpg" alt="">
+                  <img src="./asset/img/snowman3.jpg" alt="">
+                </div>
+              </div>
+
+            <div class="product__details-info">
+                <h3>Đồ trang trí người tuyết đẹp mắt</h3>
+                <p>
+                  Làm cho kỳ nghỉ trở nên thú vị hơn với những người tuyết hoạt hình sang trọng này. Nhấn nút để xem cặp đôi mùa đông bob và trang trí một cái cây trong khi họ hát theo giai điệu của "Christmas Tree". Sợi bóng đèn rối của họ sáng lên theo âm nhạc, trang trí ngọt ngào này phối hợp với cuốn truyện dành cho trẻ em "Lễ hội vui nhộn băng giá Snowville hàng năm"
+                </p>
+
+                <div class="product__pride">
+                    <div class="product__pride-oldPride" style="font-size: 20px;">
+                        <span class="Price">
+                            <bdi>75.000&nbsp;
+                                <span class="currencySymbol">₫</span>
+                            </bdi>
+                        </span>
+                    </div>
+                    <div class="product__pride-newPride" style="font-size: 40px;">
+                        <span class="Price">
+                            <bdi>100.000&nbsp;
+                                <span class="currencySymbol">₫</span>
+                            </bdi>
+                        </span>
+                    </div>
+                </div>
+
+                <form action="" method="POST">
+                    <div class="number">
+                      <span>Số lượng</span>
+
+                      <div class="num">
+                        <button>-</button>
+                          <div class="number__count">
+                             1
+                          </div>
+                          <button>+</button>
+                      </div>
+                    </div>
+
+                    <div class="product__cart">
+                        <button type="submit" class="product__cart-add" name="add-to-cart" onclick="alert('Them vao gio hang thanh cong')">Thêm vào giỏ hàng</button>
+
+                        <button type="submit" class="product__cart-buy" name="buy-now">Mua ngay</button>
+                    </div>
+                </form>
+            </div>    
+    </div>
+</div>
+<!-- End Hiển thị chi tiết sản phẩm -->
+
+<!-- Mô tả sản phẩm -->
+<div class="body">
+    <div class="body__mainTitle">
+        <h3>Chi tiết sản phẩm</h3>
+    </div>
+
+    <div class="flex">
+      <div class="flex">
+         <div class="block">
+        <div class="block0">Danh Mục</div>
+           <div class="block0">Xuất xứ</div>
+           <div class="block0">Kho hàng</div>
+           <div class="block0">Gửi từ</div>
+      </div>
+        
+           <div class="block">
+            <div class="block1">Sản phẩm</div>
+            <div class="block1">Việt nam</div>
+             <div class="block1">8234</div>
+             <div class="block1">Thành Phố Thủ Đức, TP. Hồ Chí Minh</div>
+      </div>
+      </div>
+     
+    </div>
+
+</div>
+<!-- End Mô tả sản phẩm -->
+
+<div class="body">
+    <div class="body__mainTitle">
+        <h3>Mô tả sản phẩm</h3>
+    </div>
+
+    <p style="width: 70%; line-height: 30px; white-space: pre-wrap; color: var(--colorBlack);">
+Quần Ống Rộng Nhung Tăm Dáng Suông Baggy Phong Cách Hàn Quốc Uniex Nam Nữ Basic 5 Màu
+
+THÔNG TIN SẢN PHẨM: 
+👉 Tên sản phẩm: Quần Jogger Ống Rộng Suông Oversize form rộng UNISEX, quần nhung tăm ống suông, quần nhung tăm ống rộng,...
+- Đặc điểm: chất nhung tăm, cạp chun siêu thoải mái.
+✔️ Xuất sứ: Việt Nam 
+✔️ Nam và Nữ đều mặc được
+✔️ Chất liệu: Nhung Gân - Nhung Tăm  MỀM MỊN MÁT . Form quần rộng chuẩn OVERSIZE UNISEX cực đẹp.
+
+- Bảng size: Bảng size nằm dưới cùng a, quần form nhỏ nên mn tăng size giúp e nhé.
+❤️Size M: dưới 48kg dài 90cm (người dưới 1m55)
+Size L: dưới 56kg dài 93cm (người 1m55 -1m65)
+Size XL: dưới 65kg dài 95cm (người 1m65 - 1m73) 
+Mn muốn mặc rộng xuông hẳn có thể tăng 1 size là đẹp a.
+
+❤CAM KẾT KHI MUA HÀNG TẠI SHOP❤️
+✅Sản phẩm luôn được kiểm tra đúng màu, đúng size, không lỗi chỉ, lỗi vải mới giao cho khách hàng.
+✅Hàng chủ yếu là HÀNG XƯỞNG nhưng shop cam kết sẽ chuẩn bị hàng trong thời gian sớm nhất cùng số lượng hàng sẵn cho mn để rút ngắn thời gian chuẩn bị hàng.
+✅Hỗ trợ đổi trả khi khách muốn đổi màu đổi size bằng ship ngoài.
+✅Sẵn sàng hoàn hàng trả tiền cho dù có một lỗi chỉ nhỏ, khách chủ động gửi lại hàng giúp shop nhé.
+
+❤️Lưu ý cần đọc:
+😘VIDEO shop tự quay + Ảnh thật do shop tự chụp + Ảnh do khách đã mua hàng feedback = Mn yên tâm về chất lượng sản phẩm bên shop nhé!
+😘Nếu bạn HÀI LÒNG về sản phẩm xin hãy tặng shop 5 sao, với mỗi feedback 5 sao shop sẽ gửi tặng bạn 1 voucher thật xịn xò.
+😘Nếu bạn KHÔNG HÀI LÒNG về sản phẩm, đừng vội đánh giá sản phẩm, đừng ấn ĐÃ NHẬN ĐƯỢC HÀNG, hãy inobox để shop đổi trả hàng giúp bạn nhé.
+</p>    
+</div>
+<!-- End Mô tả sản phẩm -->
+    </section>
+
+
+<section class="one" id="two">
+    <div class="ourshop3 wow slideInLeft" data-wow-duration="2s" data-wow-delay="0.3s">Có thể liên quan</div>  
+    <div class="row wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.4s">
+      <div class="col-xl-2_5 col-lg-3 col-md-4 col-sm-6">
+        <div class="box__news">
+          <div class="image-effect">
+            <img src="./asset/img/coc.png" alt="">
+            
+            <div class="icons">
+                <i class="fas fa-eye"></i>
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-share"></i>
+            </div>
+
+            <div class="saleoff">
+              -10%
+            </div>
+
+          </div>
+
+          <div class="box__news-content">
+              <h3><a href="details.html"> Bộ cốc giáng sinh</a></h3>
+
+              <div class="price">
+                <div class="price-old">
+                  60.000đ
+                </div>
+                50.000đ</div>
+              <a href="#" class="btn">Thêm vào giỏ</a>
+          </div>
+        </div>
+        
+      </div>
+      <div class="col-xl-2_5 col-lg-3 col-md-4 col-sm-6">
+        <div class="box__news">
+          <div class="image-effect">
+            <img src="./asset/img/gaubong2.png" alt="">
+            
+            <div class="icons">
+                <i class="fas fa-eye"></i>
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-share"></i>
+            </div>
+
+            <div class="saleoff">
+              -30%
+            </div>
+
+          </div>
+
+          <div class="box__news-content">
+              <h3><a href="details.html"> Gấu bông giáng sinh</a></h3>
+
+              <div class="price">
+                <div class="price-old">
+                  70.000đ
+                </div>
+                50.000đ</div>
+              <a href="#" class="btn">Thêm vào giỏ</a>
+          </div>
+        </div>
+        
+      </div>
+      <div class="col-xl-2_5 col-lg-3 col-md-4 col-sm-6">
+        <div class="box__news">
+          <div class="image-effect">
+            <img src="./asset/img/snowman.png" alt="">
+            
+            <div class="icons">
+                <i class="fas fa-eye"></i>
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-share"></i>
+            </div>
+
+            <div class="saleoff">
+              -30%
+            </div>
+
+          </div>
+
+          <div class="box__news-content">
+              <h3><a href="details.html"> Đồ trang trí người tuyết đẹp mắt</a></h3>
+
+              <div class="price">
+                <div class="price-old">
+                  120.000đ
+                </div>
+                100.000đ</div>
+              <a href="#" class="btn">Thêm vào giỏ</a>
+          </div>
+        </div>
+        
+      </div>
+      <div class="col-xl-2_5 col-lg-3 col-md-4 col-sm-6">
+        <div class="box__news">
+          <div class="image-effect">
+            <img src="./asset/img/product-5.png" alt="">
+            
+            <div class="icons">
+                <i class="fas fa-eye"></i>
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-share"></i>
+            </div>
+
+            <div class="saleoff">
+              -20%
+            </div>
+
+          </div>
+
+          <div class="box__news-content">
+              <h3><a href="details.html"> Đồ trang trí cầu tuyết đẹp mắt</a></h3>
+
+              <div class="price">
+                <div class="price-old">
+                  60.000đ
+                </div>
+                50.000đ</div>
+              <a href="#" class="btn">Thêm vào giỏ</a>
+          </div>
+        </div>
+        
+      </div>
+      <div class="col-xl-2_5 col-lg-3 col-md-4 col-sm-6">
+        <div class="box__news">
+          <div class="image-effect">
+            <img src="./asset/img/goi.png" alt="">
+            
+            <div class="icons">
+                <i class="fas fa-eye"></i>
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-share"></i>
+            </div>
+
+            <div class="saleoff">
+              -10%
+            </div>
+
+          </div>
+
+          <div class="box__news-content">
+              <h3><a href="details.html"> Gối ngủ giáng sinh</a></h3>
+
+              <div class="price">
+                <div class="price-old">
+                  50.000đ
+                </div>
+                40.000đ</div>
+              <a href="#" class="btn">Thêm vào giỏ</a>
+          </div>
+        </div>
+        
+      </div>
+    </div>  
+</section>
+
+
+    <footer>
+      <!-- Footer main -->
+      <section class="ft-main">
+        <div class="ft-main-item">
+          <h2 class="ft-title">About</h2>
+          <ul>
+            <li>
+              <i class="fas fa-angle-right"></i>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <i class="fas fa-angle-right"></i>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <i class="fas fa-angle-right"></i>
+              <a href="#">Shop</a>
+            </li>
+            <li>
+              <i class="fas fa-angle-right"></i>
+              <a href="#">Gallery</a>
+            </li>
+
+          </ul>
+        </div>
+        <div class="ft-main-item">
+          <h2 class="ft-title">Resources</h2>
+          <ul>
+            <li>
+              <i class="fas fa-angle-right"></i>
+              <a href="#">Code</a>
+            </li>
+            <li>
+              <i class="fas fa-angle-right"></i>
+              <a href="#">Html</a>
+            </li>
+            <li>
+              <i class="fas fa-angle-right"></i>
+              <a href="#">Css</a>
+            </li>
+            <li>
+              <i class="fas fa-angle-right"></i>
+              <a href="#">Js</a>
+            </li>
+
+          </ul>
+        </div>
+        <div class="ft-main-item">
+          <h2 class="ft-title">Hỗ trợ</h2>
+          <ul>
+            <li>
+              <i class="fas fa-angle-right"></i>
+              <a href="#">Help</a>
+            </li>
+            <li>
+              <i class="fas fa-angle-right"></i>
+              <a href="#">Sales</a>
+            </li>
+            <li>
+              <i class="fas fa-angle-right"></i>
+              <a href="#">Advance</a>
+            </li>
+
+          </ul>
+        </div>
+
+
+        <div class="ft-main-item">
+          <h2 class="ft-title">Liên Hệ</h2>
+          <form>
+            <p>Email</p>
+            <input type="email" name="email" placeholder="Enter email address">
+            
+            <p>Tin nhắn</p>
+            <textarea name="" id="" cols="30" rows="10" style="margin: 0px; height: 70px; padding: 10px; border: none;">              
+            </textarea>
+            
+            <input type="submit" value="Gửi" class="submit">
+          </form>
+        </div>
+      </section>
+    
+      <!-- Footer social -->
+      <section class="ft-social">
+        <ul class="ft-social-list">
+          <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fab fa-github"></i></a></li>
+          <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+        </ul>
+      </section>
+    
+      <!-- Footer legal -->
+      <section class="ft-legal">
+        <ul class="ft-legal-list">
+          <li><a href="#">Terms &amp; Conditions</a></li>
+          <li><a href="#"> Privacy Policy</a></li>
+          <li>&copy; 2021</li>
+        </ul>
+      </section>
+    </footer>
+
+    <script src="./asset/scripts/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="./asset/scripts/zoomsl.min.js"></script>
+    
+    <script>
+      //Zoom image Details product
+      $(document).ready(function(){
+
+      $('.small-img img').click(function(){
+          var image = $(this).attr('src');
+          $('.big-img img').attr('src', image);
+      });
+
+      $('#zoom').imagezoomsl({
+        zoomrange:[5,3]
+      });
+
+      });
+    </script>
+
+  </body>
+</html>
